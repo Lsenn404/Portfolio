@@ -1,0 +1,236 @@
+:root {
+    --dark: navy;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* 
+body {
+
+}
+
+main {
+
+} 
+*/
+header {
+    background-color: var(--dark);
+    border-bottom: 10px solid #ddaf94;
+}
+
+.contactSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contactMenu {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+.contactDiv {
+    width: 20%;
+    justify-content: right;
+    border-right: 10px solid #ddaf94;;
+}
+
+.connect {
+    font-size: 48px;
+
+}
+
+a h3 {
+    color: black;
+}
+
+
+
+
+ul {
+    padding: 20px;
+    text-align: right;
+  }
+  
+  li {
+    display: inline;
+    margin: 10px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 10px;
+    background-color: var(dark);
+    
+    
+}
+
+.projectHeading {
+    justify-content: center;
+}
+
+nav h1 {
+    font-size: 48px;
+    color: white;
+}
+/* .navBar {
+    
+} */
+
+.navigationMenu {
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.aboutMeSkills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top: 10px solid #ddaf94;
+    border-bottom: 10px solid #ddaf94;
+}
+
+.mySkillsDiv {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutMeDiv {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+    
+}
+
+.aboutMeText {
+    margin-right: 30px;
+}
+
+#myProjects {
+    /* border: 1px solid grey; */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projectContainer{
+    width: 40%;
+    display: inline;
+}
+
+#mainContainer {
+    width: 90%;
+}
+.contactMenu {
+    /* border: 1px solid grey; */
+    padding: 10px;
+}
+
+.contactLink {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* .info {
+    
+} */
+
+.projectImage {
+    width: 100%;
+    height: 200px;
+}
+
+#mainImage{
+    width: 80%;
+}
+
+.profileImage {
+    max-width: 300px;
+    height: auto;
+    border-left: 10px solid #ddaf94;
+    
+}
+
+.imageSection{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageSectionDetails {
+    font-size: 48px;
+    text-align: center;
+    
+}
+
+/*
+
+.imageSectionDetails {
+
+}
+
+.aboutMe {
+
+}
+
+#aboutMe {
+
+}
+
+.skillsAndProjects {
+
+}
+
+.mySkills {
+
+}
+
+#mySkills{
+    
+} 
+*/
+.projectTitle {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 0px;
+    width: 30%;
+    height: 20%;
+    background-color: white;
+}
+
+
+.svgIcons{
+    width: 50px;
+    height: 50px;
+}
+
+.myButton {
+    color: rgb(255, 255, 255); font-size: 20px; line-height: 20px; padding: 7px; border-radius: 36px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;
+}
+.myButton:hover {
+    background: #1C6EA4; 
+}
+.myButton:active {
+    background: #144E75; 
+}
+
+/* first cutoff at 984 pixels */

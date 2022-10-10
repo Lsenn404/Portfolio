@@ -8,59 +8,94 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <nav class="navBar">
-            <h1>Logan Senn Portfolio</h1>
-        <div class="navigationMenu">
-            <a href="#aboutMe">About Me</a>
-            <a href="#mySkills">Skills</a>
-            <a href="#myProjects">Projects</a>
-            <a href="#contactMenu">Let's Connect!</a>
-        </div>
-        </nav>
+    
+        <header>
+            <nav class="navBar">
+                <h1 id="headerText">Logan Senn Portfolio</h1>
+                <ul class="navigationMenu">
+                    <a href="#aboutMe">
+                        <li>About Me</li>
+                    </a>
+                    <a href="#mySkills">    
+                        <li>Skills</li>
+                    </a>
+                    <a href="#myProjects">
+                        <li>Projects</li>
+                    </a>
+                    <a href="#contactMenu">
+                        <li>Let's Connect!</li>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main>
         <section class="imageSection">
-            <img class='profileImage'src="https://p.kindpng.com/picc/s/78-785917_user-login-function-name-avatar-user-icon-hd.png" alt="profile picture">
+            
             <div class="imageSectionDetails">
                 <h1>Logan Senn</h1>
                 <h3>Full-Stack Web Developer</h3>
             </div>
+            <img class='profileImage'src='Images/recent-photo.jpg' title='Profile Image'alt="profile picture">
         </section>
 
-        <section class="aboutMe" id="aboutMe">
-            <h1>What I do... </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui dolore harum distinctio magnam quia. Doloribus rerum ratione porro praesentium molestiae, blanditiis illum nam illo minima modi inventore quisquam autem.
-            Consequatur, dolor aliquam ea consectetur veritatis esse! Aut consequatur deleniti odit ea odio saepe porro quis vitae in quia temporibus suscipit error consequuntur, a quasi? Illo vero obcaecati hic expedita?
-            Fuga ipsa qui eius ex quod perferendis tempore quibusdam alias repellat velit. Nulla provident sint hic blanditiis autem perspiciatis nam aliquam, voluptatum eos quod, doloribus sed nihil ipsa unde sequi?
-            Voluptate, exercitationem placeat hic fugiat omnis iure molestiae expedita dignissimos fugit quam molestias unde laudantium incidunt soluta enim totam, quibusdam praesentium voluptas. Nemo, fugiat! Eligendi sequi incidunt hic maiores eveniet.
-            Esse alias debitis totam et eaque facere a magnam numquam expedita soluta exercitationem, mollitia repellendus sint ipsam ad libero hic molestias animi labore corporis vel harum reiciendis. Veritatis, id voluptatum!</p>
+        <section class="aboutMeSkills" id="aboutMe">
+            <div class="mySkillsDiv" id="mySkills">
+
+                <h1 class="cardHeading">Skills</h1>
+                <img class='svgIcons' src="Images/html-svgrepo-com.svg" title="html" alt="html">
+                <img class='svgIcons' src="Images/css-svgrepo-com.svg" title="CSS" alt="css">
+                <img class='svgIcons' src="Images/js-svgrepo-com.svg" title="JavaScript" alt="js">
+            </div>
+            <div class="aboutMeDiv">
+                <h1 class="aboutMeText">About Me</h1>
+                <p>I am an aspiring web developer from Sunset Beach, California. After graduating from Loyola Marymount University in 2022 with a bachelors in finance, I enrolled in a fullstack web development bootcamp in order to broaden my skillset.</p>
+            </div>
         </section>
 
         <section class="skillsAndProjects">
-            <div class="mySkills" id="mySkills">
-                <h1 class="cardHeading">Skills</h1>
-                <img src="" title="html" alt="">
-                <img src="" title="CSS" alt="">
-                <img src="" title="JavaScript" alt="">
+            <div>
+                <h1 class="projectsHeading">Projects</h1>
             </div>
-
             <div class="myProjects" id="myProjects">
-                <h1 class="cardHeading">Projects</h1>
+                
                 <div>
-                    <img src="/images/css.svg" alt="">
+                    <img src="images/css.svg" alt="">
+                </div>
+                <div class ='projectContainer' id="mainContainer">
+                    <span class="projectTitle">
+                        <h4 >Weather App</h4>
+                        <p>projects coming soon</p>
+                    </span>
+                    <img class='projectImage'id="mainImage"src="images/Weather-Icon.png" alt="weather-icon">
                 </div>
                 <div class ='projectContainer'>
-                    <h4>Project Name</h4>
-                    <p>projects coming soon</p>
+                    <span class="projectTitle">
+                        <h4 >Surf Report</h4>
+                        <p>projects coming soon</p>
+                    </span>
+                    <img class='projectImage'src="images/Wave-Image.jpg" alt="wave-image">
                 </div>
                 <div class ='projectContainer'>
-                    <h4>Project Name</h4>
-                    <p>projects coming soon</p>
+                    <span class="projectTitle">
+                        <h4 >Calculator</h4>
+                        <p>projects coming soon</p>
+                    </span>
+                    <img class='projectImage'src="images/Calculator-Image.png" alt="calculator-image">
                 </div>
             </div>
         </section>
 
-        <section class="contactMenu" id="contactMenu">
+        <section class="contactSection">
 
+
+            <div class="contactDiv">
+                <h1 class="connect">Let's Connect!</h1>
+            </div>
+            <div class="contactMenu">
+                <a class="contactLink" href="tel:5626666153"><h3 class="info">562-666-6153</h3></a>
+                <a class="contactLink" href="mailto:logsenn2@gmail.com"><h3 class="info">Send Email</h3></a>
+                <a class="contactLink" href="https://github.com/Lsenn404"><h3 class="info">GitHub</h3></a>
+            </div>  
         </section>
     </main>
     
