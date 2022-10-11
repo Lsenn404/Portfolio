@@ -65,10 +65,6 @@ header {
     ;
 }
 
-.connect {
-    font-size: 48px;
-
-}
 
 a h3 {
     color: black;
@@ -223,9 +219,6 @@ img {
     margin: 0px;
 }
 
-.contactMenu {
-    padding: 10px;
-}
 
 .contactLink {
     font-size: 20px;
