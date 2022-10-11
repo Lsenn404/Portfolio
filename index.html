@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,97 +8,113 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-        <header>
-            <nav class="navBar">
-                <h1 id="headerText">Logan Senn Portfolio</h1>
-                <ul class="navigationMenu">
-                    <a href="#aboutMe">
-                        <li>About Me</li>
-                    </a>
-                    <a href="#mySkills">    
-                        <li>Skills</li>
-                    </a>
-                    <a href="#myProjects">
-                        <li>Projects</li>
-                    </a>
-                    <a href="#contactMenu">
-                        <li>Let's Connect!</li>
-                    </a>
+
+    <header>
+        <nav class="navBar">
+            <h1 id="headerText">Portfolio</h1>
+            <ul class="navigationMenu">
+                <a href="#aboutMe">
+                    <li>About Me</li>
+                </a>
+                <!-- <a href="#mySkills">
+                    <li>Skills</li> -->
+                </a>
+                <a href="#myProjects">
+                    <li>Projects</li>
+                </a>
+                <a href="#contactMenu">
+                    <li>Let's Connect!</li>
+                </a>
                 </div>
-            </nav>
-        </header>
-        <main>
+        </nav>
+    </header>
+    <main>
         <section class="imageSection">
-            
+
             <div class="imageSectionDetails">
-                <h1>Logan Senn</h1>
-                <h3>Full-Stack Web Developer</h3>
-            </div>
-            <img class='profileImage'src='Images/recent-photo.jpg' title='Profile Image'alt="profile picture">
-        </section>
-
-        <section class="aboutMeSkills" id="aboutMe">
-            <div class="mySkillsDiv" id="mySkills">
-
-                <h1 class="cardHeading">Skills</h1>
-                <img class='svgIcons' src="Images/html-svgrepo-com.svg" title="html" alt="html">
-                <img class='svgIcons' src="Images/css-svgrepo-com.svg" title="CSS" alt="css">
-                <img class='svgIcons' src="Images/js-svgrepo-com.svg" title="JavaScript" alt="js">
-            </div>
-            <div class="aboutMeDiv">
-                <h1 class="aboutMeText">About Me</h1>
-                <p>I am an aspiring web developer from Sunset Beach, California. After graduating from Loyola Marymount University in 2022 with a bachelors in finance, I enrolled in a fullstack web development bootcamp in order to broaden my skillset.</p>
-            </div>
-        </section>
-
-        <section class="skillsAndProjects">
-            <div>
-                <h1 class="projectsHeading">Projects</h1>
-            </div>
-            <div class="myProjects" id="myProjects">
-                
-                <div>
-                    <img src="images/css.svg" alt="">
-                </div>
-                <div class ='projectContainer' id="mainContainer">
-                    <span class="projectTitle">
-                        <h4 >Weather App</h4>
-                        <p>projects coming soon</p>
-                    </span>
-                    <img class='projectImage'id="mainImage"src="images/Weather-Icon.png" alt="weather-icon">
-                </div>
-                <div class ='projectContainer'>
-                    <span class="projectTitle">
-                        <h4 >Surf Report</h4>
-                        <p>projects coming soon</p>
-                    </span>
-                    <img class='projectImage'src="images/Wave-Image.jpg" alt="wave-image">
-                </div>
-                <div class ='projectContainer'>
-                    <span class="projectTitle">
-                        <h4 >Calculator</h4>
-                        <p>projects coming soon</p>
-                    </span>
-                    <img class='projectImage'src="images/Calculator-Image.png" alt="calculator-image">
+                <div class="sideBar" id="firstBar">
+                    <h3 id="pageTitle">Logan Senn</h3>
+                    <h6 id="pageDescription">Web Developer</h6>
                 </div>
             </div>
+            <img class='profileImage' src='Images/recent-photo.jpg' title='Profile Image' alt="profile picture">
         </section>
+        <div id="contentContainer">
+            <section id="aboutMe">
+                <div class="sideBar" id="mySkills">
+                    <h1 class="heading">About Me</h1>
+                    <!-- <h1 class="cardHeading">Skills</h1>
+                    <img class='svgIcons' src="Images/html-svgrepo-com.svg" title="html" alt="html">
+                    <img class='svgIcons' src="Images/css-svgrepo-com.svg" title="CSS" alt="css">
+                    <img class='svgIcons' src="Images/js-svgrepo-com.svg" title="JavaScript" alt="js"> -->
+                </div>
+                <div class="content">
+                    <p id="aboutMeText">I am an aspiring web developer from Sunset Beach, California. After graduating
+                        from Loyola
+                        Marymount University in 2022 with a bachelors in finance, I enrolled in a fullstack web
+                        development bootcamp in order to broaden my skillset.
 
-        <section class="contactSection">
+                    </p>
+                </div>
+            </section>
+
+            <section id="mainContent">
+                <div class="sideBar">
+                    <h1 class="heading">Projects</h1>
+                </div>
+                <div class="content" id="myProjects">
+                    <div class='projectContainer' id="mainContainer">
+                        <div class="projectTitle">
+                            <h4 class="projectName">Weather App</h4>
+                            <p class="projectDescription">WIP</p>
+                        </div>
+
+                        <img class='projectImage' id="mainImage" src="images/weather-banner.png" alt="weather-icon">
+                    </div>
+                    <div id="smallBanners">
+                        <div class='projectContainer'>
+                            <div class="projectTitle">
+                                <h4 class="projectName">Surf Report</h4>
+                                <p class="projectDescription">WIP</p>
+                            </div>
+                            <img class='projectImage' src="images/surf-banner.jpg" alt="wave-image">
+                        </div>
+                        <div class='projectContainer'>
+                            <div class="projectTitle">
+                                <h4 class="projectName">Calculator</h4>
+                                <p class="projectDescription">WIP</p>
+                            </div>
+                            <img class='projectImage' src="images/Calculator-Image.png" alt="calculator-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contactSection">
 
 
-            <div class="contactDiv">
-                <h1 class="connect">Let's Connect!</h1>
-            </div>
-            <div class="contactMenu">
-                <a class="contactLink" href="tel:5626666153"><h3 class="info">562-666-6153</h3></a>
-                <a class="contactLink" href="mailto:logsenn2@gmail.com"><h3 class="info">Send Email</h3></a>
-                <a class="contactLink" href="https://github.com/Lsenn404"><h3 class="info">GitHub</h3></a>
-            </div>  
-        </section>
+                <div class="sideBar">
+                    <h1 class="heading">Let's Connect!</h1>
+                </div>
+                <div class="content">
+                    <div class="contactMenu">
+                        <a class="contactLink" href="tel:5626666153">
+                            <h3 class="info">562-666-6153</h3>
+                        </a>
+                        <a class="contactLink" href="mailto:logsenn2@gmail.com">
+                            <h3 class="info">Send Email</h3>
+                        </a>
+                        <a class="contactLink" href="https://github.com/Lsenn404">
+                            <h3 class="info">GitHub</h3>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
-    
+
 </body>
+
 </html>
