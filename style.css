@@ -1,5 +1,11 @@
 :root {
-    --dark: navy;
+    --blue: hsla(177, 100%, 37%, 1);
+    --teal: hsla(191, 100%, 28%, 1);
+    --rhythm: hsla(255, 14%, 49%, 1);
+    --light: hsla(248, 62%, 90%, 1);
+    background-color: var(--light)
+    
+
 }
 
 * {
@@ -32,14 +38,20 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-    
+
+
+}
+
+#contentContainer {
+    display: flex;
+    flex-direction: column;
 }
 
 .contactDiv {
     width: 20%;
     justify-content: right;
-    border-right: 10px solid #ddaf94;;
+    border-right: 10px solid #ddaf94;
+    ;
 }
 
 .connect {
@@ -51,33 +63,37 @@ a h3 {
     color: black;
 }
 
-
+.heading {
+    display: inline;
+    width: inherit;
+}
 
 
 ul {
     padding: 20px;
     text-align: right;
-  }
-  
-  li {
+}
+
+li {
     display: inline;
     margin: 10px;
     font-size: 24px;
     text-align: center;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     color: white;
-  }
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     margin: 10px;
     background-color: var(dark);
-    
-    
+
+
 }
 
 .projectHeading {
@@ -88,6 +104,7 @@ nav h1 {
     font-size: 48px;
     color: white;
 }
+
 /* .navBar {
     
 } */
@@ -95,10 +112,10 @@ nav h1 {
 .navigationMenu {
     text-align: center;
     display: inline-block;
-    
+
 }
 
-.aboutMeSkills {
+#aboutMe {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -117,28 +134,69 @@ nav h1 {
     display: flex;
     justify-content: space-around;
     padding-left: 10px;
-    
+
 }
 
 .aboutMeText {
     margin-right: 30px;
 }
 
+.content {
+    padding: 10px;
+    width: 75%;
+    float: right;
+}
+
+.sideBar {
+    height: 100%;
+    width: 150px;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    background-color: lightblue;
+
+}
+
 #myProjects {
     /* border: 1px solid grey; */
-    padding: 10px;
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-.projectContainer{
+
+.projectContainer {
     width: 40%;
     display: inline;
+    
+}
+
+img {
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+}
+#smallBanners {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+#mainContent {
+    height: fit-content;
 }
 
 #mainContainer {
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin: 0px;
 }
+
 .contactMenu {
     /* border: 1px solid grey; */
     padding: 10px;
@@ -155,21 +213,23 @@ nav h1 {
 
 .projectImage {
     width: 100%;
-    height: 200px;
+    border: 5px solid var(--rhythm);
+
 }
 
-#mainImage{
-    width: 80%;
+#mainImage {
+    width: 100%;
+    height: 300px;
 }
 
 .profileImage {
     max-width: 300px;
     height: auto;
     border-left: 10px solid #ddaf94;
-    
+
 }
 
-.imageSection{ 
+.imageSection {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,7 +238,7 @@ nav h1 {
 .imageSectionDetails {
     font-size: 48px;
     text-align: center;
-    
+
 }
 
 /*
@@ -201,7 +261,7 @@ nav h1 {
 
 .mySkills {
 
-}
+}(
 
 #mySkills{
     
@@ -214,23 +274,41 @@ nav h1 {
     left: 0px;
     width: 30%;
     height: 20%;
-    background-color: white;
+    background-color: var(--light);
+    border-left: 5px solid var(--rhythm);
+    
 }
 
 
-.svgIcons{
+.svgIcons {
     width: 50px;
     height: 50px;
 }
 
 .myButton {
-    color: rgb(255, 255, 255); font-size: 20px; line-height: 20px; padding: 7px; border-radius: 36px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 20px;
+    padding: 7px;
+    border-radius: 36px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+    border: 2px solid rgb(28, 110, 164);
+    display: inline-block;
 }
+
 .myButton:hover {
-    background: #1C6EA4; 
+    background: #1C6EA4;
 }
+
 .myButton:active {
-    background: #144E75; 
+    background: #144E75;
 }
 
 /* first cutoff at 984 pixels */
